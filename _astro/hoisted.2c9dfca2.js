@@ -1,1 +1,0 @@
-import"./hoisted.033c49b1.js";const e=document.getElementById("form"),t=document.getElementById("form-wrapper"),n=document.getElementById("thank-you-message");e&&e.addEventListener("submit",function(m){m.preventDefault(),t&&n&&(t.classList.add("hidden"),n.classList.remove("hidden"))});
