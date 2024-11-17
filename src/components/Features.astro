@@ -1,0 +1,121 @@
+---
+const features = [
+  {
+    icon: 'assets/features/icon-01.svg',
+    title: 'Carpet Cleaning',
+    ref: '/services.html#carpet-cleaning',
+    refTitle: 'Learn More',
+    description:
+      'Professional cleaning service designed to remove dirt, stains, and allergens from carpets using advanced cleaning techniques.',
+  },
+  {
+    icon: 'assets/features/icon-02.svg',
+    title: 'Tile & Grout Cleaning',
+    ref: '/services.html#tile-cleaning',
+    refTitle: 'Learn More',
+    description:
+      'Specialized cleaning services targeting the removal of grime and restoration of the appearance of tile and grout.',
+  },
+  {
+    icon: 'assets/features/icon-03.svg',
+    title: 'Rug Restoration',
+    ref: '/services.html#rug-cleaning',
+    refTitle: 'Learn More',
+    description:
+      'Dedicated to restoring the original beauty and extending the life of various types of rugs.',
+  },
+  {
+    icon: 'assets/features/icon-04.svg',
+    title: 'Lounge Suites & Mattresses',
+    ref: '/services.html#lounge-cleaning',
+    refTitle: 'Learn More',
+    description:
+      'Cleaning services for lounge suites that aim to refresh and rejuvenate the upholstery. Deep cleaning services for mattresses to eliminate dust mites, allergens, and ensure a hygienic sleeping environment.',
+  },
+  // {
+  //   icon: 'assets/features/icon-04.svg',
+  //   title: 'Mattresses',
+  //   ref: '/services.html#mattress-cleaning',
+  //   refTitle: 'Learn More',
+  //   description:
+  //     'Deep cleaning services for mattresses to eliminate dust mites, allergens, and ensure a hygienic sleeping environment.',
+  // },
+  {
+    icon: 'assets/features/icon-04.svg',
+    title: 'Vehicle Interiors',
+    ref: '/services.html#vehicle-cleaning',
+    refTitle: 'Learn More',
+    description:
+      'Cleaning services designed for the interior of vehicles, enhancing the cleanliness and comfort of your cars interior.',
+  },
+  {
+    icon: 'assets/features/icon-04.svg',
+    title: 'Vinyl Strip & Seal',
+    ref: '/services.html#strip-seal',
+    refTitle: 'Learn More',
+    description:
+      'A service focused on stripping old sealant from floors and resealing them to protect and enhance their appearance.',
+  },
+  // {
+  //   icon: 'assets/features/icon-04.svg',
+  //   title: 'Place holder',
+  //   ref: 'javascript:void(0)',
+  //   refTitle: 'Learn More',
+  //   description:
+  //     'This seems to be a placeholder for future services or perhaps a section under development.',
+  // },
+];
+---
+
+<!-- ====== Features Section Start -->
+<section class="pt-20 pb-8 lg:pt-[120px] lg:pb-[70px] dark:bg-dark">
+  <div class="container">
+    <div class="-mx-4 flex flex-wrap">
+      <div class="w-full px-4">
+        <div class="mb-12 mx-auto max-w-[485px] lg:mb-[70px] text-center">
+          <span class="mb-2 block text-lg font-semibold text-primary">
+            <!--  -->
+          </span>
+          <h2 class="mb-3 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]">
+            Our Services
+          </h2>
+          <!-- <p class="text-base text-body-color dark:text-dark-6">
+            There are many variations of passages of Lorem Ipsum available
+            but the majority have suffered alteration in some form.
+          </p> -->
+        </div>
+      </div>
+    </div>
+    <div class="-mx-4 flex flex-wrap">
+      {
+        features.map((feature) => (
+          <div class="w-full px-4 md:w-1/2 lg:w-1/4">
+            <div class="wow fadeInUp group mb-12" data-wow-delay=".1s">
+              <div
+                class="relative z-10 mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-[14px] bg-primary"
+              >
+                <span
+                  class="absolute top-0 left-0 -z-[1] mb-8 flex h-[70px] w-[70px] rotate-[25deg] items-center justify-center rounded-[14px] bg-primary bg-opacity-20 duration-300 group-hover:rotate-45"
+                ></span>
+                <img src={feature.icon} alt="icon" />
+              </div>
+              <h4 class="mb-3 text-xl font-bold text-dark dark:text-white">
+                {feature.title}
+              </h4>
+              <p class="mb-8 text-body-color dark:text-dark-6 lg:mb-9">
+                {feature.description}
+              </p>
+              <!--<a-->
+              <!--  href={feature.ref}-->
+              <!--  class="text-base font-medium text-dark dark:text-white hover:text-primary dark:hover:text-primary"-->
+              <!--&gt;-->
+              <!--  {feature.refTitle}-->
+              <!--</a>-->
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
+<!-- ====== Features Section End -->

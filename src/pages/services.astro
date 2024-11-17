@@ -1,0 +1,15 @@
+---
+import Breadcrumb from '../components/layout/Breadcrumb.astro';
+import Layout from '../layouts/Layout.astro';
+import ServicesFull from '../components/ServicesFull.astro';
+---
+
+<Layout
+  description="Play Astro is a free and open-source Astro template, built for SaaS, startup, business and software website. Play crafted in a way that you can use with almost all sort of web project."
+  title="Features | Our Services"
+>
+  <Breadcrumb>
+    <Fragment slot="title">Services</Fragment>
+  </Breadcrumb>
+  <ServicesFull />
+</Layout>
